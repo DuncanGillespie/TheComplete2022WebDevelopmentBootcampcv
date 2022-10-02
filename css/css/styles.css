@@ -6,19 +6,31 @@ body{
 
 }
 h1{
-    margin:0px;
+    margin: 50px auto 0 auto;
     padding-top: 0px;
     font-family: 'Sacramento', cursive;
+    font-size: 562.5%; 
+    /* 16px = 100%  90px/16 = 5.625 */
+    /* 16px = 1em   1 em = 1 capital M    5.625em */ 
+    /* rem root M doesn't matter if previous scaling applied */ 
+    color: #66BFBF;
+    /* line-height: 2; */
 }
 h2{
     font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight:normal;
 }
 h3{
     font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+p{
+    color: #40514e;
 }
 .top-container{
-    background-color: #DFF6FF;
-    border: 10px  solid black;
+    background-color: #EAF6F6;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -32,11 +44,75 @@ h3{
     position: absolute;
     left: 30%;
 }
+
+iframe{
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    
+}
+
+.profile{
+    margin-bottom: 100px;
+}
+.profile-pic{
+    margin-top: 100px;
+}
+.dots{
+    font-size: 300%;
+    color: grey;
+}
 .middle-container{
     
     
 }
 
+.skills{
+    margin-top: 100px;
+}
+.skill-row{
+    width: 50%;
+    margin: 100px auto 200px auto;
+    text-align: left;  
+    line-height: 2;
+}
+
+.code-img{
+    margin: 0 30px 0 0;
+    width: 25%;
+    float: left;
+    /* clear: left to remove for text, etc. */
+}
+
+.chilli-img{
+    margin: 0 0 0 30px ;
+    width: 25%;
+    float: right;
+}
+.button{
+    margin:50px 0 100px 0;
+}
+.btn{
+    color: white;
+    background-color: #66BFBF;
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
 .bottom-container{
-    
+    background-color: #66BFBF;
+    padding: 75px;
+}
+
+.bottom-container a{
+    color: #11999E;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.bottom-container p {
+    padding-top: 75px;
+    color: #EAF6F6;
 }
