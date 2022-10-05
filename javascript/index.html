@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <p id="demo">Lorem Ipsum is simply dummy text of the printing 
+            and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into 
+            electronic typesetting, remaining essentially unchanged. It 
+            was popularised in the 1960s with the release of Letraset 
+            sheets containing Lorem Ipsum passages, and more recently 
+            with desktop publishing software like Aldus PageMaker including 
+            versions of Lorem Ipsum.
+        </p>
+        <p id="demo2"></p>
+        <script>
+            // console.log("Hello World!");
+
+            // var tweet = prompt("Compose you tweet: ");
+            // var tweetCount = tweet.length;
+            // console.log("You have written "+ tweetCount + " characters, you have " + (140 - tweetCount) + " characters remaining.");
+
+            // var name = "Angela";
+            
+            // document.getElementById("demo").innerHTML = name.slice(0,1);
+            // document.getElementById("demo2").innerHTML = name;
+
+            const demo = document.getElementById('demo');
+            document.getElementById("demo").innerHTML = demo.textContent.slice(0, 140).toUpperCase();
+
+            // var name = prompt("What is your name?");
+            // var firstLetter = name.slice(0,1);
+            // var otherLetters = name.slice(1,);
+            // console.log("Welcome "+firstLetter.toUpperCase()+otherLetters.toLowerCase());
+
+            // function getMilk(){
+            //     console.log("up");
+            //     console.log("down");
+            //     console.log("left");
+            //     console.log("right");
+            //     // ctrl + h to find and replace multiple results
+            //     // Stanford Karel the robot
+            // }
+            // getMilk();
+
+            function getMilk(money){
+                console.log("up");
+                console.log("down");
+                console.log("left");
+                console.log("right");
+                var bottles = Math.floor(money / 1.5);
+                console.log("You bought "+bottles+ " bottles of milk.");
+                return money % 1.5;
+            }
+            console.log("You got $"+getMilk(7)+" in change.");
+
+            // function lifeInWeeks(age) {
+            //     var yearsRemaining = 90 - age;
+            //     var days = yearsRemaining * 365;
+            //     var weeks = yearsRemaining * 52;
+            //     var months = yearsRemaining * 12;
+            //     console.log("You have "+days+"days, "+weeks+"weeks, and "+months+"months until you turn 90.")
+
+            // }
+            
+            //lifeInWeeks(39);
+
+            function bmiCalculator(weight, height){
+                return Math.round(weight/(height*height));
+            }
+            var bmi = bmiCalculator(95, 1.73); 
+            console.log(bmi);
+        </script>
+    </body>
+</html>
