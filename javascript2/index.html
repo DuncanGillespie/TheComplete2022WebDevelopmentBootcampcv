@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <p id="demo">Lorem Ipsum is simply dummy text of the printing 
+            and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into 
+            electronic typesetting, remaining essentially unchanged. It 
+            was popularised in the 1960s with the release of Letraset 
+            sheets containing Lorem Ipsum passages, and more recently 
+            with desktop publishing software like Aldus PageMaker including 
+            versions of Lorem Ipsum.
+        </p>
+        <p id="demo2"></p>
+        <script>
+            // prompt("What is your name?");
+            // prompt("What is their name?");
+            // var lovePercentage = (Math.floor((Math.random() * 100)) + 1);
+
+            // if (lovePercentage <= 25){
+            //     document.getElementById("demo").innerHTML = "Your love score is a very low "+lovePercentage+"%";
+            // } else if (lovePercentage <= 50){
+            //     document.getElementById("demo").innerHTML = "Your love score is low "+lovePercentage+"%";
+            // } else if (lovePercentage <= 75){
+            //     document.getElementById("demo").innerHTML = "Your love score is high "+lovePercentage+"%";
+            // } else {
+            //     document.getElementById("demo").innerHTML = "Your love score is very high "+lovePercentage+"%";
+            // }
+            
+            // var year = prompt("Enter a year: ");
+
+            // if ((year % 4) != 0){
+            //     document.getElementById("demo").innerHTML = year+ " is not a leap year.";
+            // } else if ( (year % 100) != 0){
+            //     document.getElementById("demo").innerHTML = year+ " is a leap year.";
+            // } else if ((year % 100) == 0 && (year % 400) != 0){
+            //     document.getElementById("demo").innerHTML = year+ " is not a leap year.";
+            // } else if ((year % 100) == 0 && (year % 400) == 0){
+            //     document.getElementById("demo").innerHTML = year+ " is a leap year.";
+            // } else {
+            //     document.getElementById("demo").innerHTML = year+ " This step should not be possible.";
+            // }  
+            
+            // alternative solution 
+            // if ( year % 4 == 0){
+            //     if ( year % 100 == 0){
+            //         if ( year % 400 == 0){
+            //             document.getElementById("demo").innerHTML = year+ " is a leap year.";
+            //         } else {
+            //             document.getElementById("demo").innerHTML = year+ " is not a leap year.";
+            //         }
+            //     } else {
+            //         document.getElementById("demo").innerHTML = year+ " is a leap year.";
+            //     }
+            // } else {
+            //     document.getElementById("demo").innerHTML = year+ " is not a leap year.";
+            // }
+
+            // var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+            // var guestName = prompt("What is you name?");
+            // if(guestList.includes(guestName)){
+            //     document.getElementById("demo").innerHTML = "Welcome "+guestName;
+            // } else {
+            //     document.getElementById("demo").innerHTML = "Sorry maybe next time.";
+            // }
+            
+            // const fizzBuzzArray = [];
+            // for (var i = 1; i < 101; i++){
+            //     if(i%5 == 0 && i%3 == 0){
+            //         fizzBuzzArray[i] = "fizzBuzz";
+            //     } else if(i%3 == 0 && i%5 != 0){
+            //         fizzBuzzArray[i] = "fizz";
+            //     } else if(i%3 != 0 && i%5 == 0){
+            //         fizzBuzzArray[i] = "buzz";
+            //     } else {
+            //         fizzBuzzArray[i] = i 
+            //     }
+
+            // }
+
+            // var text = ""
+            // for (var i = 1; i < 101; i++){
+            //     text += fizzBuzzArray[i]+", ";
+            // }
+             
+            // document.getElementById("demo").innerHTML = text;    
+
+            // var output = [];
+            // var count = 1;
+
+            // function fizzbuzz(){
+                
+            //     if(count%5 == 0 && count%3 == 0){
+            //         output.push("fizzBuzz");
+            //     } else if(count%3 == 0 && count%5 != 0){
+            //         output.push("fizz");
+            //     } else if(count%3 != 0 && count%5 == 0){
+            //         output.push("Buzz");
+            //     } else {
+            //         output.push(count); 
+            //     }
+            //     count++;
+
+            //     var text = ""
+            //     for (var i = 0; i < output.length; i++){
+            //         text += output[i]+", ";
+            //     }
+                
+            //     document.getElementById("demo").innerHTML = text;
+            // }
+            // for(var i = 0; i < 101; i++){
+            //     fizzbuzz();
+            // }
+            // function whosPaying(names) {
+    
+            // /******Don't change the code above*******/
+                
+            //     //Write your code here.
+                
+            //     var ranNum = Math.floor(Math.random() * names.length);
+                
+            //     var randomPerson = names[ranNum];
+                
+            //     return randomPerson+" is going to buy lunch today!";
+
+            // /******Don't change the code below*******/    
+            // }
+            
+            // var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+            // whosPaying(names);
+
+            // var count = 99;
+
+            // while (count > 0){
+            //     console.log(count +" bottles of beer on the wall, "+count+" bottles of beer. Take one down pass it around, "+(--count)+" bottles of beer.");
+            // }
+            // console.log("Now there are no more bottles of beer on the wall.");
+
+            function fibonacciGenerator (n) {
+            //Do NOT change any of the code above 👆
+                
+                //Write your code here:
+                var sequenceLength = n;
+                
+                var sequence = [0];
+                
+                for (var i = 0; i < n; i++){
+                    
+                }
+                
+                if (n==0){
+                    sequence = [];
+                } else if (n==1){
+                    sequence = [0];
+                } else if (n==2){
+                    sequence = [0,1];
+                } else {
+                    sequence = [0,1]
+                    for (var i = 2; i < n; i++){
+                        sequence.push(sequence[i-1]+sequence[i-2])
+                    }
+                   
+                }
+                //Return an array of fibonacci numbers starting from 0.
+                return sequence;
+            //Do NOT change any of the code below 👇
+            }
+
+            console.log(fibonacciGenerator (10));
+        </script>
+    </body>
+</html>
