@@ -1,6 +1,7 @@
 var index = 1;
 var maxIndex = $('img').length;
 
+// left arrow 
 $("#leftArrow").on("click", function(){
     $("h1").css({color: "red"});
     $(".image"+index).hide();
@@ -10,6 +11,7 @@ $("#leftArrow").on("click", function(){
     }
     $(".image"+index).show();
 })
+// right arrow 
 $("#rightArrow").on("click", function(){
     $("h1").css({color: "red"});
     $(".image"+index).hide();
@@ -20,33 +22,11 @@ $("#rightArrow").on("click", function(){
     $(".image"+index).show();
 })
 
-$(".dot1").on("click", function(){
+// dots 
+$(".dot").click(function(){
+    currentDot = $(this).index();
     for(var i = 1; i < 6; i++){
         $(".image"+i).hide();
     }
-    $(".image"+1).show();
-})
-$(".dot2").on("click", function(){
-    for(var i = 1; i < 6; i++){
-        $(".image"+i).hide();
-    }
-    $(".image"+2).show();
-})
-$(".dot3").on("click", function(){
-    for(var i = 1; i < 6; i++){
-        $(".image"+i).hide();
-    }
-    $(".image"+3).show();
-})
-$(".dot4").on("click", function(){
-    for(var i = 1; i < 6; i++){
-        $(".image"+i).hide();
-    }
-    $(".image"+4).show();
-})
-$(".dot5").on("click", function(){
-    for(var i = 1; i < 6; i++){
-        $(".image"+i).hide();
-    }
-    $(".image"+5).show();
+    $(".image"+(currentDot+1)).show();
 })
